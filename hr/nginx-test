@@ -1,19 +1,18 @@
----
 apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
-  name: helmtest
-  namespace: flux-system
+  name: mmtest
+  namespace: default
 spec:
+  interval: 1m
   chart:
     spec:
-      chart: test-apps
-      reconcileStrategy: ChartVersion
+      chart: "/test-apps"
+      version: '0.1.0'
       sourceRef:
         kind: GitRepository
-        name: test
-      version: '*'
-  interval: 30s
-  targetNamespace: default
+        name: mmtest
+        namespace: flux-system
+      interval: 1m
   values:
-    replicaCount: 1
+    replicaCount: 2
