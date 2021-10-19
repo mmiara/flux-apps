@@ -13,7 +13,7 @@ spec:
         kind: GitRepository
         name: test
         namespace: flux-system
-      interval: 60s
+  interval: 60s
   values:
     replicaCount: 3
 # ---
