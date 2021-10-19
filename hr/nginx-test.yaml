@@ -17,16 +17,3 @@ spec:
   interval: 60s
   values:
     replicaCount: 3
-# ---
-# apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
-# kind: Kustomization
-# metadata:
-#   name: hr-repo
-#   namespace: flux-system
-# spec:
-#   interval: 1m0s
-#   path: ./hr
-#   prune: true
-#   sourceRef:
-#     kind: GitRepository
-#     name: hr-repo
