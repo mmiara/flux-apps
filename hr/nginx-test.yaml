@@ -11,7 +11,7 @@ spec:
       version: '0.1.0'
       sourceRef:
         kind: GitRepository
-        name: helm-charts
+        name: test
         namespace: flux-system
       interval: 60s
   values:
