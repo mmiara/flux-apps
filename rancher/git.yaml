@@ -1,8 +1,0 @@
-apiVersion: source.toolkit.fluxcd.io/v1beta1
-kind: GitRepository
-metadata:
-  name: rancher
-  namespace: default
-spec:
-  interval: 5m
-  url: https://github.com/rancher/rancher

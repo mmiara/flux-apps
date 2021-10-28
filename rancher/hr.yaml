@@ -8,9 +8,8 @@ spec:
   chart:
     spec:
       chart: ./chart
-#      version: '0.1.0'
       sourceRef:
         kind: GitRepository
-        name: rancher
+        name: test
         namespace: flux-system
   interval: 60s
